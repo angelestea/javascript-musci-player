@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- Particles -->
+    <div id="particles-js"></div>
+        <!--Player-->
+        <div class="container-container">
+            <div class="container">
+                
+                <!--Volume-->
+            <div class="volume-container">
+                <div class="volume">
+                    <span id="full-volume" class="bi bi-volume-up" alt="full volume"></span>
+                    
+                        <div id="volume-progress-container" class="progress-volume-container">
+                            <section id="volume-progress" ></section>
+                        </div>
+                    
+                        <span id="mute" class="bi bi-volume-mute"></span>
+                </div>
+            </div>
+            <div class="float"></div>
+            <main class="player">
+                    
+                    <!--Title-->
+                    <h1 class="title" id="title">Select a song</h1>
+                    
+                    <!-- Cover -->
+                    <img src="./img/default-cover.jpg" id="cover" alt="" class="cover">
+                    
+                    
+                    <!-- Audio HTML media element -->
+                    <audio src="./audio/" id="audio"></audio>
+                    
+                    <!--Progress bar-->
+                    <div id="progress-container" class="progress-container">
+                        <section id="progress" class="progress">
+                            
+                        </section>
+                    </div>
+                    
+                    <!--Controls-->
+                    <section class="controls">
+                        <button class="prev">
+                            <i id="prev" class="fas fa-backward"></i>
+                        </button>
+                        <button class="prev">
+                            <i id="play" class="fas fa-play"></i>
+                        </button>
+                        <button class="prev">
+                            <i id="next" class="fas fa-forward"></i>
+                        </button>
+                    </section>
+                    
+                <!--Song's list-->
+                <ul class="songs" id="songsList">
+                    <!-- <li><a href="#">Song</a></li>
+                        <li><a href="#">Song</a></li>
+                        <li><a href="#">Song</a></li> -->
+                </ul>
+                
+            </main>
+        </div>
+        </div>
+        <script src="./js/main.js"></script>
+        <script src="./js/particles.min.js"></script>
+        <script src="./js/app.js"></script>
+    </body>
+    </html>
